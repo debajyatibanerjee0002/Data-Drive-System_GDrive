@@ -1,0 +1,152 @@
+2025/02/24 02:44:26 main.go:20: Server is running on port: 8080
+2025/02/24 02:44:46 signUpHandler.go:15: Inside SignupHandler
+2025/02/24 02:44:46 signUpModel.go:12: Inside SignupModel
+2025/02/24 02:44:46 signUpModel.go:13: Request Data:  {0 debajyati@gmail.com 12345 debajyati}
+2025/02/24 02:44:46 signUpDao.go:9: Inside CheckUserExistsDao
+2025/02/24 02:44:46 signUpDao.go:26: Inside InsertUserDao
+2025/02/24 02:45:11 signUpHandler.go:15: Inside SignupHandler
+2025/02/24 02:45:11 signUpModel.go:12: Inside SignupModel
+2025/02/24 02:45:11 signUpModel.go:13: Request Data:  {0 rahul@gmail.com 12345 rahul}
+2025/02/24 02:45:11 signUpDao.go:9: Inside CheckUserExistsDao
+2025/02/24 02:45:11 signUpDao.go:26: Inside InsertUserDao
+2025/02/24 02:45:28 signUpHandler.go:65: Inside LoginHandler
+2025/02/24 02:45:28 signUpModel.go:51: Inside LoginModel
+2025/02/24 02:45:28 signUpModel.go:52: Request Data:  {debajyati 12345}
+2025/02/24 02:45:28 signUpDao.go:9: Inside CheckUserExistsDao
+2025/02/24 02:45:28 signUpDao.go:42: Inside GetUserDetailsDao
+2025/02/24 02:45:28 signUpModel.go:75: User details:  {1 debajyati@gmail.com $2a$10$bDng/XMWijmxrRk/TAz01.1UDPcDd.8vACgvDoJfGPK0DdQ7kmU6q debajyati}
+2025/02/24 02:45:28 passwordEncryptionDecryption.go:19: Inside CheckPasswordHash
+2025/02/24 02:45:28 passwordEncryptionDecryption.go:20: Password:  12345
+2025/02/24 02:45:28 passwordEncryptionDecryption.go:21: Hash:  $2a$10$bDng/XMWijmxrRk/TAz01.1UDPcDd.8vACgvDoJfGPK0DdQ7kmU6q
+2025/02/24 02:46:32 route.go:127: /g-drive/getFolders
+2025/02/24 02:46:32 route.go:165: Query User ID:  1
+2025/02/24 02:46:32 route.go:168: User ID:  1
+2025/02/24 02:46:32 route.go:169: Claims User ID:  1
+2025/02/24 02:46:32 fileHandler.go:62: Inside GetFoldersHandler
+2025/02/24 02:46:32 fileModel.go:106: Inside GetFoldersModel
+2025/02/24 02:46:32 fileDao.go:258: responseFolder:  []
+2025/02/24 02:48:12 main.go:20: Server is running on port: 8080
+2025/02/24 02:48:18 route.go:127: /g-drive/getFolders
+2025/02/24 02:48:18 route.go:165: Query User ID:  1
+2025/02/24 02:48:18 route.go:168: User ID:  1
+2025/02/24 02:48:18 route.go:169: Claims User ID:  1
+2025/02/24 02:48:18 fileHandler.go:62: Inside GetFoldersHandler
+2025/02/24 02:48:18 fileModel.go:106: Inside GetFoldersModel
+2025/02/24 02:48:18 fileDao.go:258: responseFolder:  []
+2025/02/24 02:48:37 route.go:127: /g-drive/getFilesByUserId
+2025/02/24 02:48:37 route.go:165: Query User ID:  1
+2025/02/24 02:48:37 route.go:168: User ID:  1
+2025/02/24 02:48:37 route.go:169: Claims User ID:  1
+2025/02/24 02:48:37 fileHandler.go:100: Inside GetFilesByUserId
+2025/02/24 02:48:37 fileModel.go:124: Inside GetFilesModel
+2025/02/24 02:48:37 fileDao.go:264: Inside GetFilesDao
+2025/02/24 02:49:17 route.go:127: /g-drive/createFolderByUserId
+2025/02/24 02:49:17 fileHandler.go:177: Inside CreateFolderByUserId
+2025/02/24 02:49:17 fileModel.go:178: Inside CreateFolderByUserIdModel
+2025/02/24 02:49:17 fileDao.go:376: Inside CheckIsThereAnyFolderPresentOrNotDao
+2025/02/24 02:49:17 fileDao.go:317: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:49:17 fileModel.go:204: created root folder Id:  {1 root_1 0 1 1 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:49:17 fileModel.go:255: Folder created successfully: storage/root_1
+2025/02/24 02:49:48 route.go:127: /g-drive/createFolderByUserId
+2025/02/24 02:49:48 fileHandler.go:177: Inside CreateFolderByUserId
+2025/02/24 02:49:48 fileHandler.go:197: Creating...
+2025/02/24 02:49:48 fileModel.go:217: Inside CreateFolderByUserIdModel
+2025/02/24 02:49:48 fileDao.go:333: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:49:48 fileDao.go:341: New Folder:  {0 p-1 1 1 0 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:49:48 fileModel.go:232: created folder Id:  {2 p-1 1 1 1 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:49:48 fileDao.go:351: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:49:48 fileDao.go:368: FolderPath:  root_1/
+2025/02/24 02:49:48 fileModel.go:255: Folder created successfully: storage/root_1/p-1
+2025/02/24 02:50:02 route.go:127: /g-drive/createFolderByUserId
+2025/02/24 02:50:02 fileHandler.go:177: Inside CreateFolderByUserId
+2025/02/24 02:50:02 fileHandler.go:197: Creating...
+2025/02/24 02:50:02 fileModel.go:217: Inside CreateFolderByUserIdModel
+2025/02/24 02:50:02 fileDao.go:333: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:50:02 fileDao.go:341: New Folder:  {0 p-2 1 1 0 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:50:02 fileModel.go:232: created folder Id:  {3 p-2 1 1 1 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:50:02 fileDao.go:351: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:50:02 fileDao.go:368: FolderPath:  root_1/
+2025/02/24 02:50:02 fileModel.go:255: Folder created successfully: storage/root_1/p-2
+2025/02/24 02:50:30 route.go:127: /g-drive/createFolderByUserId
+2025/02/24 02:50:30 fileHandler.go:177: Inside CreateFolderByUserId
+2025/02/24 02:50:30 fileHandler.go:197: Creating...
+2025/02/24 02:50:30 fileModel.go:217: Inside CreateFolderByUserIdModel
+2025/02/24 02:50:30 fileDao.go:333: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:50:30 fileDao.go:341: New Folder:  {0 c-1-1 2 1 0 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:50:30 fileModel.go:232: created folder Id:  {4 c-1-1 2 1 1 0 0001-01-01 00:00:00 +0000 UTC [] []}
+2025/02/24 02:50:30 fileDao.go:351: Inside CreateRootFolderByUserIdModel
+2025/02/24 02:50:30 fileDao.go:368: FolderPath:  root_1/p-1/
+2025/02/24 02:50:30 fileModel.go:255: Folder created successfully: storage/root_1/p-1/c-1-1
+2025/02/24 02:51:04 route.go:127: /g-drive/getFolders
+2025/02/24 02:51:04 route.go:165: Query User ID:  1
+2025/02/24 02:51:04 route.go:168: User ID:  1
+2025/02/24 02:51:04 route.go:169: Claims User ID:  1
+2025/02/24 02:51:04 fileHandler.go:62: Inside GetFoldersHandler
+2025/02/24 02:51:04 fileModel.go:106: Inside GetFoldersModel
+2025/02/24 02:51:04 fileDao.go:247: [1 2 4]
+2025/02/24 02:51:04 fileDao.go:247: [1 3]
+2025/02/24 02:51:04 fileDao.go:258: responseFolder:  [[{1 root_1 0 1 1 0 2025-02-24 02:49:17 +0530 IST [1 2 4] []} {2 p-1 1 1 1 0 2025-02-24 02:49:48 +0530 IST [1 2 4] []} {4 c-1-1 2 1 1 0 2025-02-24 02:50:30 +0530 IST [1 2 4] []}] [{1 root_1 0 1 1 0 2025-02-24 02:49:17 +0530 IST [1 3] []} {3 p-2 1 1 1 0 2025-02-24 02:50:02 +0530 IST [1 3] []}]]
+2025/02/24 02:52:06 route.go:127: /g-drive/uploadFile
+2025/02/24 02:52:06 fileModel.go:17: Inside uploadFileModel
+2025/02/24 02:52:06 fileDao.go:14: Inside CheckFolderExistsDao
+2025/02/24 02:52:06 fileDao.go:91: Inside GetFolderDetailsDao
+2025/02/24 02:52:06 fileDao.go:106: Inside GetRootFolderNaeDao
+2025/02/24 02:52:06 fileModel.go:42: get_root_folder:  root_1/
+2025/02/24 02:52:06 fileDao.go:117: Inside GetFullPathDao
+2025/02/24 02:52:06 fileDao.go:118: FolderID:  3
+2025/02/24 02:52:06 fileDao.go:132: Inside for loop
+2025/02/24 02:52:06 fileDao.go:133: Current Folder:  3
+2025/02/24 02:52:06 fileDao.go:142: ParentID:  1
+2025/02/24 02:52:06 fileDao.go:132: Inside for loop
+2025/02/24 02:52:06 fileDao.go:133: Current Folder:  1
+2025/02/24 02:52:06 fileModel.go:59: storage_path_ids:  1/3
+2025/02/24 02:52:06 fileDao.go:46: Inside InsertFolderDao
+2025/02/24 02:52:06 fileDao.go:51: \root_1\p-2\sample.txt
+2025/02/24 02:52:06 fileDao.go:86: File inserted successfully
+2025/02/24 02:55:24 main.go:20: Server is running on port: 8080
+2025/02/24 02:55:42 route.go:127: /g-drive/uploadFile
+2025/02/24 02:55:42 fileModel.go:17: Inside uploadFileModel
+2025/02/24 02:55:42 fileDao.go:14: Inside CheckFolderExistsDao
+2025/02/24 02:55:42 fileDao.go:91: Inside GetFolderDetailsDao
+2025/02/24 02:55:42 fileDao.go:106: Inside GetRootFolderNaeDao
+2025/02/24 02:55:42 fileModel.go:42: get_root_folder:  root_1/
+2025/02/24 02:55:42 fileDao.go:117: Inside GetFullPathDao
+2025/02/24 02:55:42 fileDao.go:118: FolderID:  3
+2025/02/24 02:55:42 fileDao.go:132: Inside for loop
+2025/02/24 02:55:42 fileDao.go:133: Current Folder:  3
+2025/02/24 02:55:42 fileDao.go:142: ParentID:  1
+2025/02/24 02:55:42 fileDao.go:132: Inside for loop
+2025/02/24 02:55:42 fileDao.go:133: Current Folder:  1
+2025/02/24 02:55:42 fileModel.go:59: storage_path_ids:  1/3
+2025/02/24 02:55:42 fileDao.go:46: Inside InsertFolderDao
+2025/02/24 02:55:42 fileDao.go:51: storage\root_1\p-2\sample.txt
+2025/02/24 02:55:42 fileDao.go:86: File inserted successfully
+2025/02/24 02:57:05 route.go:127: /g-drive/getFilesByUserId
+2025/02/24 02:57:05 route.go:165: Query User ID:  1
+2025/02/24 02:57:05 route.go:168: User ID:  1
+2025/02/24 02:57:05 route.go:169: Claims User ID:  1
+2025/02/24 02:57:05 fileHandler.go:100: Inside GetFilesByUserId
+2025/02/24 02:57:05 fileModel.go:125: Inside GetFilesModel
+2025/02/24 02:57:05 fileDao.go:264: Inside GetFilesDao
+2025/02/24 02:58:26 route.go:127: /g-drive/getFilesByUserId
+2025/02/24 02:58:26 route.go:165: Query User ID:  1
+2025/02/24 02:58:26 route.go:168: User ID:  1
+2025/02/24 02:58:26 route.go:169: Claims User ID:  1
+2025/02/24 02:58:26 fileHandler.go:100: Inside GetFilesByUserId
+2025/02/24 02:58:26 fileModel.go:125: Inside GetFilesModel
+2025/02/24 02:58:26 fileDao.go:264: Inside GetFilesDao
+2025/02/24 02:59:14 route.go:127: /g-drive/deleteFileByUserId
+2025/02/24 02:59:14 route.go:165: Query User ID:  1
+2025/02/24 02:59:14 route.go:168: User ID:  1
+2025/02/24 02:59:14 route.go:169: Claims User ID:  1
+2025/02/24 02:59:14 fileHandler.go:134: Inside DeleteFileByUserId
+2025/02/24 02:59:14 fileModel.go:143: Inside DeleteFileByUserIdModel
+2025/02/24 02:59:14 fileDao.go:277: Inside DeleteFileByUserIdDao
+2025/02/24 02:59:14 fileDao.go:292: File soft deleted successfully
+2025/02/24 02:59:27 route.go:127: /g-drive/getFilesByUserId
+2025/02/24 02:59:27 route.go:165: Query User ID:  1
+2025/02/24 02:59:27 route.go:168: User ID:  1
+2025/02/24 02:59:27 route.go:169: Claims User ID:  1
+2025/02/24 02:59:27 fileHandler.go:100: Inside GetFilesByUserId
+2025/02/24 02:59:27 fileModel.go:125: Inside GetFilesModel
+2025/02/24 02:59:27 fileDao.go:264: Inside GetFilesDao
