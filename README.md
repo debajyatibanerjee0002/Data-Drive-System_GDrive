@@ -27,13 +27,21 @@ A backend service similar to Google Drive, built using **Golang** with the **Gin
 ## Folder Structure
 
 ```bash
-├── config/           # Environment Configurations
-├── controllers/      # API Handlers
-├── middlewares/      # JWT Authentication & Logging
-├── models/           # Database Models
-├── routes/           # API Routes
-├── utils/            # Utility Functions
-└── main.go           # Application Entry Point
+├── Documents/        # Documentation Files
+├── config/          # Environment Configurations
+├── dao/             # Data Access Layer
+├── entities/        # Data Entities/Models
+├── handlers/        # API Handlers
+├── log/             # Log Files
+├── logger/          # Logging Utilities
+├── models/          # Database Models
+├── router/          # API Routes
+├── utility/         # Utility Functions
+├── .gitignore       # Git Ignore File
+├── README.md        # Project Documentation
+├── go.mod           # Go Module File
+├── go.sum           # Go Dependencies File
+└── main.go          # Application Entry Point
 ```
 
 ## 🔐 User Authentication APIs
