@@ -43,6 +43,7 @@ func UploadFileModel(fileHeader *multipart.FileHeader, folderID, userID uint) (e
 	storage_path := get_root_folder
 	var storage_path_ids string
 
+	// checking root folder or not
 	if getFolderDetails.ParentID == 0 {
 		// storage_path = storage_path + getFolderDetails.Name
 		str := strconv.FormatUint(uint64(getFolderDetails.ID), 10)

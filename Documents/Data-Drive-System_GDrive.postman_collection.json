@@ -1,0 +1,953 @@
+{
+	"info": {
+		"_postman_id": "32896360-a815-4fd1-8258-1117b63678a5",
+		"name": "Data-Drive-System_GDrive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41828975"
+	},
+	"item": [
+		{
+			"name": "POST /signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"debajyati@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/g-drive/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"debajyati@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/g-drive/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 08:00:35 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "276"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User signed up successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyMzRAZ21haWwuY29tIiwiZXhwIjoxNzQwMzA0ODM1LCJpYXQiOjE3NDAyOTc2MzUsInVzZXJuYW1lIjoiZGViYWp5YXRpMTIzNCJ9.k3aHjhA-O-pmUST-FpycYIj2M7uDVv5adjBtu4_pNWI\"\n}"
+				},
+				{
+					"name": "POST /signup conflict",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"debajyati123@gmail.com\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/g-drive/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"signup"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 07:24:23 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"User already exists\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginid\": \"debajyati123\",\r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/g-drive/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"loginid\": \"debajyati\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/g-drive/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 07:56:05 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"logged in successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzMDQ1NjUsImlhdCI6MTc0MDI5NzM2NSwidXNlcm5hbWUiOiJkZWJhanlhdGkifQ.4tRabPiuW3YES_mqJeAKuU-C9PTI2ETkjQ_SXhKewtI\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzNTI1MjgsImlhdCI6MTc0MDM0NTMyOCwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.fM0cLrQSzbGtRW5zCIfn1Km64ETDj5B_Ce_sEdxRXFQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/E:/TestFolder-2/sample.txt"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "folder_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/g-drive/uploadFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"uploadFile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /uploadFile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzMzY0MDYsImlhdCI6MTc0MDMyOTIwNiwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.FES7Dgvf5dEtLcG7u6XWC7XetrKNIo-fOZX_NFqFN3k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/E:/TestFolder-2/sample.txt"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "folder_id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/g-drive/uploadFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"uploadFile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 17:38:49 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "211"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"file\": {\n        \"ID\": 4,\n        \"Name\": \"sample.txt\",\n        \"Path\": \"\\\\rootStorage\\\\folder-1\\\\cFolder-1-2\\\\sample.txt\",\n        \"FolderID\": 5,\n        \"UserID\": 1,\n        \"Pathid\": \"\",\n        \"ActiveFlag\": 0,\n        \"DeleteFlag\": 0,\n        \"CreatedAt\": \"0001-01-01T00:00:00Z\"\n    },\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /getFolders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyM0BnbWFpbC5jb20iLCJleHAiOjE3NDAzNDgwOTcsImlhdCI6MTc0MDM0MDg5NywidXNlcmlkIjoyLCJ1c2VybmFtZSI6ImRlYmFqeWF0aTEyMyJ9.Me5h-BDx5u5Qe00IhazfK0uBwbCtEq83wNLUsHfV28s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/g-drive/getFolders?userid=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"getFolders"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /getFolders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzNDM3ODEsImlhdCI6MTc0MDMzNjU4MSwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.3Bm7ZGg7Ha3X1ZGZP1QQ-iDe8lj38GRTjsG-dRMrJYE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/g-drive/getFolders?userid=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"getFolders"
+							],
+							"query": [
+								{
+									"key": "userid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 19:15:26 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1355"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Folders retrieved successfully\",\n    \"folders\": [\n        [\n            {\n                \"ID\": 1,\n                \"Name\": \"rootStorage\",\n                \"ParentID\": 0,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T22:09:23+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    4\n                ]\n            },\n            {\n                \"ID\": 2,\n                \"Name\": \"folder-1\",\n                \"ParentID\": 1,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:04:20+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    4\n                ]\n            },\n            {\n                \"ID\": 4,\n                \"Name\": \"cFolder-1-1\",\n                \"ParentID\": 2,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:04:54+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    4\n                ]\n            }\n        ],\n        [\n            {\n                \"ID\": 1,\n                \"Name\": \"rootStorage\",\n                \"ParentID\": 0,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T22:09:23+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    5\n                ]\n            },\n            {\n                \"ID\": 2,\n                \"Name\": \"folder-1\",\n                \"ParentID\": 1,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:04:20+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    5\n                ]\n            },\n            {\n                \"ID\": 5,\n                \"Name\": \"cFolder-1-2\",\n                \"ParentID\": 2,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:05:13+05:30\",\n                \"path_ids\": [\n                    1,\n                    2,\n                    5\n                ]\n            }\n        ],\n        [\n            {\n                \"ID\": 1,\n                \"Name\": \"rootStorage\",\n                \"ParentID\": 0,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T22:09:23+05:30\",\n                \"path_ids\": [\n                    1,\n                    3,\n                    6\n                ]\n            },\n            {\n                \"ID\": 3,\n                \"Name\": \"folder-2\",\n                \"ParentID\": 1,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:04:32+05:30\",\n                \"path_ids\": [\n                    1,\n                    3,\n                    6\n                ]\n            },\n            {\n                \"ID\": 6,\n                \"Name\": \"cFolder-2-1\",\n                \"ParentID\": 3,\n                \"UserID\": 1,\n                \"ActiveFlag\": 1,\n                \"DeleteFlag\": 0,\n                \"CreatedAt\": \"2025-02-23T23:09:50+05:30\",\n                \"path_ids\": [\n                    1,\n                    3,\n                    6\n                ]\n            }\n        ]\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /getFilesByUserId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyM0BnbWFpbC5jb20iLCJleHAiOjE3NDAzNDgwOTcsImlhdCI6MTc0MDM0MDg5NywidXNlcmlkIjoyLCJ1c2VybmFtZSI6ImRlYmFqeWF0aTEyMyJ9.Me5h-BDx5u5Qe00IhazfK0uBwbCtEq83wNLUsHfV28s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/g-drive/getFilesByUserId?userid=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"getFilesByUserId"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /getFilesByUserId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzMTgyOTgsImlhdCI6MTc0MDMxMTA5OCwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.9kMwkAagJofPrewduWqOdAzv-ccnzoPfvp2Gv4Dmv7k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/g-drive/getFilesByUserId?userid=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"getFilesByUserId"
+							],
+							"query": [
+								{
+									"key": "userid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 13:34:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "518"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Folders retrieved successfully\",\n    \"files\": [\n        {\n            \"ID\": 1,\n            \"Name\": \"Debajyati Banerjee.pdf\",\n            \"Path\": \"storage\\\\ParentTestFolder\\\\ChildTestFolder-1\\\\ChildTestFolder-1-1\\\\Debajyati Banerjee.pdf\",\n            \"FolderID\": 12,\n            \"UserID\": 1,\n            \"ActiveFlag\": 1,\n            \"DeleteFlag\": 0,\n            \"CreatedAt\": \"2025-02-23T16:21:18+05:30\"\n        },\n        {\n            \"ID\": 5,\n            \"Name\": \"Debajyati Banerjee.pdf\",\n            \"Path\": \"storage\\\\ParentTestFolder\\\\ChildTestFolder-1\\\\Debajyati Banerjee.pdf\",\n            \"FolderID\": 11,\n            \"UserID\": 1,\n            \"ActiveFlag\": 1,\n            \"DeleteFlag\": 0,\n            \"CreatedAt\": \"2025-02-23T17:48:35+05:30\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE /deleteFileByUserId",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzMTgyOTgsImlhdCI6MTc0MDMxMTA5OCwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.9kMwkAagJofPrewduWqOdAzv-ccnzoPfvp2Gv4Dmv7k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/g-drive/deleteFileByUserId?userid=1&fileid=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"deleteFileByUserId"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "1"
+						},
+						{
+							"key": "fileid",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE /deleteFileByUserId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzMTgyOTgsImlhdCI6MTc0MDMxMTA5OCwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.9kMwkAagJofPrewduWqOdAzv-ccnzoPfvp2Gv4Dmv7k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/g-drive/deleteFileByUserId?userid=1&fileid=7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"deleteFileByUserId"
+							],
+							"query": [
+								{
+									"key": "userid",
+									"value": "1"
+								},
+								{
+									"key": "fileid",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 13:34:40 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully deleted file\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST /createFolderByUserId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aUBnbWFpbC5jb20iLCJleHAiOjE3NDAzNTI1MjgsImlhdCI6MTc0MDM0NTMyOCwidXNlcmlkIjoxLCJ1c2VybmFtZSI6ImRlYmFqeWF0aSJ9.fM0cLrQSzbGtRW5zCIfn1Km64ETDj5B_Ce_sEdxRXFQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filePathIds\": [],\r\n    \"folderName\": \"something\", // if root folder is not there defalut \"root_userid\"\r\n    \"userid\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/g-drive/createFolderByUserId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"createFolderByUserId"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /createFolderByUserId",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyM0BnbWFpbC5jb20iLCJleHAiOjE3NDAzNDgwOTcsImlhdCI6MTc0MDM0MDg5NywidXNlcmlkIjoyLCJ1c2VybmFtZSI6ImRlYmFqeWF0aTEyMyJ9.Me5h-BDx5u5Qe00IhazfK0uBwbCtEq83wNLUsHfV28s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"filePathIds\": [8],\r\n    \"folderName\": \"something\", // if root folder is not there defalut \"rootFolde_userid\"\r\n    \"userid\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/g-drive/createFolderByUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"createFolderByUserId"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 20:35:45 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "186"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully created folder\",\n    \"response\": [\n        {\n            \"ID\": 9,\n            \"Name\": \"something\",\n            \"ParentID\": 8,\n            \"UserID\": 2,\n            \"ActiveFlag\": 1,\n            \"DeleteFlag\": 0,\n            \"CreatedAt\": \"0001-01-01T00:00:00Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE /deleteFolderByUserId",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyM0BnbWFpbC5jb20iLCJleHAiOjE3NDAzNDgwOTcsImlhdCI6MTc0MDM0MDg5NywidXNlcmlkIjoyLCJ1c2VybmFtZSI6ImRlYmFqeWF0aTEyMyJ9.Me5h-BDx5u5Qe00IhazfK0uBwbCtEq83wNLUsHfV28s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/g-drive/deleteFolderByUserId?userid=2&folderid=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"g-drive",
+						"deleteFolderByUserId"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "2"
+						},
+						{
+							"key": "folderid",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE /deleteFolderByUserId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlYmFqeWF0aTEyM0BnbWFpbC5jb20iLCJleHAiOjE3NDAzNDgwOTcsImlhdCI6MTc0MDM0MDg5NywidXNlcmlkIjoyLCJ1c2VybmFtZSI6ImRlYmFqeWF0aTEyMyJ9.Me5h-BDx5u5Qe00IhazfK0uBwbCtEq83wNLUsHfV28s",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/g-drive/deleteFolderByUserId?userid=2&folderid=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"g-drive",
+								"deleteFolderByUserId"
+							],
+							"query": [
+								{
+									"key": "userid",
+									"value": "2"
+								},
+								{
+									"key": "folderid",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "X-Requested-With,content-type, Authorization,Auth"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Autho"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache,no-store"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2025 21:03:39 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully deleted folder\"\n}"
+				}
+			]
+		}
+	]
+}
